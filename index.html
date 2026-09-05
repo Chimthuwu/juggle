@@ -1720,41 +1720,34 @@ footer {
         <div class="manifesto-text">
 
             <p>
-                We believe <strong>the circus belongs to everyone.</strong>
+                We believe <strong>the circus belongs to everyone.</strong> But mainly to those who can juggle flaming torches while overthrowing the government.
             </p>
 
             <br>
 
             <p>
-                Fascism thrives on fear, division and the idea that some
-                people are worth less than others.
+                Fascism thrives on fear, division, and people who drop the ball. We don't drop the ball. In fact, if we see a fascist, we will juggle their shoes, their lunchbox, and their preconceived notions of hierarchy.
             </p>
 
             <br>
 
             <p>
-                We reject that idea completely.
-                <span class="red">We choose solidarity.</span>
-                We choose creativity. We choose community.
+                We reject boring politics completely.
+                <span class="red">We choose chaotic good.</span>
+                We choose unicycles. We choose throwing sharp objects in the air and catching them with our teeth while yelling anticapitalist slogans.
             </p>
 
             <br>
 
             <p>
                 We juggle together, perform together,
-                laugh together and stand together.
+                laugh together, and occasionally accidentally set our eyebrows on fire together. But it's worth it for the revolution.
             </p>
 
             <br>
 
             <p>
-                [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]
-            </p>
-            
-            <br>
-            
-            <p>
-                [Placeholder manifesto expansion: We will not yield. We will stand our ground. We will keep the clubs spinning in the face of adversity, because art is inherently a resistance to oppression. Join our ranks and let's make a difference.]
+                Our demands are simple: 1. Free juggling clubs for all. 2. The immediate dissolution of all hierarchies (except for the human pyramid, which requires a strong base). 3. More glitter. If you disagree, prepare to face the wrath of 10,000 synchronized mimes.
             </p>
 
         </div>
@@ -2082,6 +2075,11 @@ const intro = document.getElementById('intro');
 
 skipButton.addEventListener('click', () => {
     intro.style.animation = 'introExit 0.6s cubic-bezier(.76,0,.24,1) forwards';
+    
+    // Remove delays so the main site appears immediately
+    document.querySelectorAll('.nav, .hero-content, .hero-logo-container').forEach(el => {
+        if (el) el.style.animationDelay = '0s';
+    });
 });
 
 /* =========================================================
